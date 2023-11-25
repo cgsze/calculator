@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Calculator {
+
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    
+    while (!in.nextLine().toLowerCase().equals("esc")) {
+      printMenu();
+      System.out.println("Input first value: ");
+      String value = in.nextLine();
+      double first = Double.valueOf(value);
+      System.out.println("Input operation: ");
+      value = in.nextLine();
+      String operation = value;
+      System.out.println("Input second value");
+      value = in.nextLine();   
+      double second = Double.valueOf(value);
+      
+      //TODO: perform calculation
+      
+      
+    }//end of while loop
+    
+  }//end of main method
+  
+  protected static void printMenu() {
+    System.out.println(" _________________________ ");
+    System.out.println("[                         ]");
+    System.out.println("[        Calculator       ]");
+    System.out.println("[_________________________]");
+    System.out.println("[_________________________]");
+    System.out.println("[                         ]");
+    System.out.println("[  (1) (2) (3)   (+) (-)  ]");
+    System.out.println("[  (4) (5) (6)   (x) (/)  ]");
+    System.out.println("[  (7) (8) (9)   (%) (*)  ]");
+    System.out.println("[_________________________]");
+    System.out.println("[_____________________esc_]");
+  }
+  
+  protected static int exponent(int base, int power) {
+    return -1;
+  }
+  
+  protected static double percentage(int fraction) {
+    return -1.0;
+  }
+}//end of class
